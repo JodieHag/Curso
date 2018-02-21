@@ -1,0 +1,25 @@
+{
+  "verbose": true,
+  "moduleNameMapper": {
+    "App": "<rootDir>/src/App.jsx",
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/test/__mocks__/fileTransformer.js"
+  },
+  "moduleFileExtensions": ["js", "jsx"],
+  "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
+  "unmockedModulePathPatterns": [
+    "node_modules/react/",
+    "node_modules/enzyme/"
+  ],
+  "moduleDirectories": [
+    "node_modules"
+  ],
+  "transform": {
+      "\\.(css|scss)$": "jest-css-modules",
+      "^.+\\.jsx?$": "babel-jest"
+      },
+  "unmockedModulePathPatterns": [
+    "react",
+    "enzyme",
+    "jest-enzyme"
+  ]
+}
