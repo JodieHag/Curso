@@ -23,10 +23,6 @@ const config = {
     }),
     new CopyWebpackPlugin([
       {
-        from: `${APP_DIR}/static/img`,
-        to: `${BUILD_DIR}/img`
-      },
-      {
         from: `${APP_DIR}/static/favicon`,
         to: `${BUILD_DIR}/`
       }
